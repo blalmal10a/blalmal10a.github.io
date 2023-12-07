@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Upwind - Tailwind CSS Landing Page Template</title>
+        <meta name="description" content="Responsive Tailwind CSS Template">
+        <meta name="keywords" content="Onepage, creative, modern, Tailwind CSS, multipurpose, clean">
+        <meta name="author" content="Shreethemes">
+        <meta name="website" content="https://shreethemes.in">
+        <meta name="email" content="support@shreethemes.in">
+        <meta name="version" content="2.0.0">
+        <!-- favicon -->
+        <link href="assets/images/favicon.ico" rel="shortcut icon">
+
+        <!-- Css -->
+        <!-- Main Css -->
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+        <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+
+    </head>
+    
+    <body class="font-rubik text-base text-slate-900 dark:text-white dark:bg-slate-900">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="assets/images/logo-icon-64.png" class="d-block mx-auto animate-[spin_10s_linear_infinite]" alt="">
+                </div>
+                <div class="justify-content-center">
+                    <div class="text-center">
+                        <h4 class="mb-0 mt-2 text-lg font-semibold">Upwind</h4>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        
+        
+        <!-- Hero Start -->
+        <section class="position-relative bg-[url('../../assets/images/bg/auth.jpg')] bg-center bg-cover">
+            <div class="absolute inset-0 bg-black opacity-90"></div>
+            <div class="container-fluid relative">
+                <div class="grid grid-cols-1">
+                    <div class="lg:col-span-4">
+                        <div class="flex flex-col min-h-screen md:px-12 py-12 px-3">
+                            <!-- Start Logo -->
+                            <div class="text-center mx-auto">
+                                <a href="index.html"><img src="assets/images/logo-light.png" alt=""></a>
+                            </div>
+                            <!-- End Logo -->
+
+                            <!-- Start Content -->
+                            <div class="text-center my-auto">
+                                <div class="w-full max-w-sm m-auto px-6 py-8 bg-white dark:bg-slate-900 rounded-md shadow-lg shadow-slate-500 dark:shadow-slate-800">
+                                    <div class="grid grid-cols-1">
+                                        <h5 class="mb-8 text-xl dark:text-white font-semibold">Login</h5>
+                                        <form class="ltr:text-left rtl:text-right">
+                                            <div class="grid grid-cols-1">
+                                                <div class="mb-4">
+                                                    <label class="dark:text-white" for="LoginEmail">Email Address:</label>
+                                                    <input id="LoginEmail" type="email" class="form-input mt-3" placeholder="name@example.com">
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <label class="dark:text-white" for="LoginPassword">Password:</label>
+                                                    <input id="LoginPassword" type="password" class="form-input mt-3" placeholder="Password:">
+                                                </div>
+
+                                                <div class="flex justify-between mb-4">
+                                                    <div class="flex items-center mb-0">
+                                                        <input class="form-checkbox rounded border-gray-200 dark:border-gray-800 text-orange-600 focus:border-orange-300 focus:ring focus:ring-offset-0 focus:ring-orange-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="RememberMe">
+                                                        <label class="form-checkbox-label text-slate-400" for="RememberMe">Remember me</label>
+                                                    </div>
+                                                    <p class="text-slate-400 mb-0"><a href="reset-password.html" class="text-slate-400">Forgot password ?</a></p>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <a href="" class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md w-full">Login / Sign in</a>
+                                                </div>
+
+                                                <div class="text-center">
+                                                    <span class="text-slate-400 dark:text-slate-300 me-2">Don't have an account ?</span> <a href="signup.html" class="text-dark dark:text-white fw-bold">Sign Up</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Content -->
+
+                            <!-- Start Footer -->
+                            <div class="text-center">
+                                <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> Upwind. Design with <i class="mdi mdi-heart text-orange-700"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                            </div>
+                            <!-- End Footer -->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Switcher -->
+        <div class="fixed top-1/4 -right-2 z-3">
+            <span class="relative inline-block rotate-90">
+                <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
+                <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk">
+                    <i class="uil uil-moon text-[20px] text-yellow-500"></i>
+                    <i class="uil uil-sun text-[20px] text-yellow-500"></i>
+                    <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+                </label>
+            </span>
+        </div>
+        <!-- Switcher -->
+
+        <!-- LTR & RTL Mode Code -->
+        <div class="fixed top-1/3 -right-3 z-50">
+            <a href="" id="switchRtl">
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden" >LTR</span>
+                <span class="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold ltr:block rtl:hidden">RTL</span>
+            </a>
+        </div>
+        <!-- LTR & RTL Mode Code -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
