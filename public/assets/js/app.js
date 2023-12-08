@@ -25,7 +25,15 @@ function fn() {
 		setTimeout(() => {
 			document.getElementById("preloader").style.visibility = "hidden"
 			document.getElementById("preloader").style.opacity = "0"
-		}, 800)
+		}, 1500)
+	}
+	const loaderWrapper = document.querySelector(".loader-wrapper")
+	if (loaderWrapper) {
+		setTimeout(() => {
+			loaderWrapper.style.visibility = "hidden"
+			loaderWrapper.style.display = "none"
+			loaderWrapper.style.opacity = "0"
+		}, 1500)
 	}
 }
 /*********************/

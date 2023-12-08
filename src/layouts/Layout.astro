@@ -24,6 +24,9 @@ const {title} = Astro.props
 		<title>{title}</title>
 
 		<!-- Css -->
+
+		<link rel="preload" href="src/assets/preload.css" as="style" />
+		<link rel="stylesheet" href="src/assets/preload.css" />
 		<link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet" />
 		<link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet" />
 		<!-- Main Css -->

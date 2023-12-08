@@ -136,7 +136,8 @@
       @apply bg-white shadow dark:shadow-slate-800 dark:bg-slate-900 #{!important};
       .navigation {
           .navbar-nav {
-              @apply block h-[21.25rem];
+            //   @apply block h-[21.25rem];
+            @apply block;
               .nav-link {
                   @apply text-slate-900;
               }
