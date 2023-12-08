@@ -1,0 +1,89 @@
+---
+import NavBar from "../components/NavBar.astro"
+import "../assets/scss/tailwind.scss"
+import FooterSection from "../components/FooterSection.astro"
+// import "../assets/scss/tailwind.scss"
+
+interface Props {
+	title: string
+}
+
+const {title} = Astro.props
+---
+
+<!doctype html>
+<html lang="en" class="light scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Experienced Mizo IT service and consultant"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<!-- Css -->
+
+		<link rel="preload" href="/assets/preload.css" as="style" />
+		<link rel="stylesheet" href="/assets/preload.css" />
+		<link href="/assets/libs/tobii/css/tobii.min.css" rel="stylesheet" />
+		<link href="/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet" />
+		<!-- Main Css -->
+		<link
+			href="/assets/libs/@iconscout/unicons/css/line.css"
+			type="text/css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/assets/libs/@mdi/font/css/materialdesignicons.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+	</head>
+	<body
+		class="font-rubik text-base text-slate-900 dark:text-white dark:bg-slate-900"
+	>
+		<NavBar />
+		<slot />
+
+		<FooterSection />
+
+		<script is:inline src="assets/libs/gumshoejs/gumshoe.polyfills.min.js"
+		></script>
+		<script is:inline src="assets/libs/tobii/js/tobii.min.js"></script>
+		<script is:inline src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+		<script is:inline src="assets/js/plugins.init.js"></script>
+		<script is:inline src="assets/js/app.js"></script>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		/* background: #13151a;
+		background-size: 224px; */
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>

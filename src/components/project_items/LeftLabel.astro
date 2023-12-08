@@ -1,0 +1,35 @@
+---
+const {name, description, image, link, link_label} = Astro.props?.data
+---
+
+<div class="timeline-item">
+	<div class="grid sm:grid-cols-2">
+		<div class="md:order-1 order-2">
+			<div
+				class="event ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7"
+			>
+				<h5 class="text-lg dark:text-white mb-1 font-medium">{name}</h5>
+				<p class="timeline-subtitle mt-3 mb-0 text-slate-400">
+					{description}
+					<br />
+					<a href={link} target="_blank">
+						<u class="text-orange-500 font-semibold">
+							{link_label}
+						</u>
+					</a>
+				</p>
+			</div>
+		</div>
+		<div class="md:order-2 order-1">
+			<div class="duration duration-right md:ms-7 relative">
+				<img src={image} class="h-64 w-64" alt="" />
+				<!-- <img src="assets/images/svg/coding.svg" class="h-64 w-64" alt="" /> -->
+				<!-- <img
+					src="../../assets/images/keyboard-icon.svg"
+					class="h-64 w-64"
+					alt=""
+				/> -->
+			</div>
+		</div>
+	</div>
+</div>
