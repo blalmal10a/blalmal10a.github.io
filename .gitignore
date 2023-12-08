@@ -1,5 +1,5 @@
 # build output
-# dist/
+dist/
 
 # generated types
 .astro/
@@ -20,3 +20,14 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 ignore
+
+src
+
+
+astro.config.mjs
+package-lock.json
+package.json
+README.md
+tailwind.config.mjs
+tsconfig.json
+yarn.lock
