@@ -1,6 +1,7 @@
 ---
 import NavBar from "../components/NavBar.astro"
 import "../assets/scss/tailwind.scss"
+import FooterSection from "../components/FooterSection.astro"
 // import "../assets/scss/tailwind.scss"
 
 interface Props {
@@ -46,6 +47,8 @@ const {title} = Astro.props
 	>
 		<NavBar />
 		<slot />
+
+		<FooterSection />
 
 		<script is:inline src="assets/libs/gumshoejs/gumshoe.polyfills.min.js"
 		></script>

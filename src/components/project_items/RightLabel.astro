@@ -1,18 +1,14 @@
 ---
-const {name, description, link, link_label} = Astro.props?.data
+const {name, description, image, link, link_label} = Astro.props?.data
 ---
 
-<div class="timeline-item mt-5 pt-4">
+<div class="timeline-item">
 	<div class="grid sm:grid-cols-2">
 		<div>
 			<div
 				class="date-label-left duration flex justify-center md:me-7 relative"
 			>
-				<img
-					src="src/assets/images/typing.svg"
-					class="h-64 w-64 object-cover"
-					alt=""
-				/>
+				<img src={image} class="h-64 w-64 object-cover" alt="" />
 			</div>
 		</div>
 		<div class="mt-4 md:mt-0">

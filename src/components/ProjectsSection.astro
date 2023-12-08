@@ -28,9 +28,13 @@ import LeftLabel from "./project_items/LeftLabel.astro"
 				{
 					projectList.map((data, index) => {
 						return !!(index % 2) ? (
-							<LeftLabel data={data} />
+							<div class={index > 0 ? "mt-48" : ""}>
+								<LeftLabel data={data} />
+							</div>
 						) : (
-							<RightLabel data={data} />
+							<div class={index > 0 ? "mt-48" : ""}>
+								<RightLabel data={data} />
+							</div>
 						)
 					})
 				}
