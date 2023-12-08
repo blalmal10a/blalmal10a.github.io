@@ -6,7 +6,7 @@
   .navigation {
       @apply w-full m-0;
       .navbar-nav {
-          @apply mt-4 flex flex-row overflow-y-scroll h-24;
+          @apply mt-4 flex flex-row ;
           .nav-link {
               @apply block p-3 text-slate-900 hover:text-orange-600 dark:text-white/60 dark:hover:text-white;
           }
