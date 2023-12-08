@@ -139,12 +139,6 @@ try {
 			htmlTag.className = "dark"
 			document.body.setAttribute("data-layout-mode", "dark")
 		}
-
-		// if (html.getAttribute("class") === "dark") {
-		//     document.body.setAttribute("data-layout-mode", "light")
-		// } else {
-		//     document.body.setAttribute("data-layout-mode", "dark")
-		// }
 	}
 
 	const switcher = document.getElementById("theme-mode")
