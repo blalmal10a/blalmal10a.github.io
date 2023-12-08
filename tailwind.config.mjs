@@ -32,7 +32,7 @@ export default {
 			},
 		},
 		extend: {
-			// @import 'src/assets/scss/tailwind.scss',
+			// @import '/assets/scss/tailwind.scss',
 			colors: {
 				dark: "#3c4858",
 				black: "#161c2d",

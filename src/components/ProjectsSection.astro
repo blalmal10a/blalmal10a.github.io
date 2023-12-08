@@ -1,5 +1,5 @@
 ---
-import {projectList} from "../assets/project-data.js"
+import {projectList} from "../scripts/project-data"
 import RightLabel from "./project_items/RightLabel.astro"
 import LeftLabel from "./project_items/LeftLabel.astro"
 ---
@@ -28,11 +28,11 @@ import LeftLabel from "./project_items/LeftLabel.astro"
 				{
 					projectList.map((data, index) => {
 						return !!(index % 2) ? (
-							<div class={index > 0 ? "mt-48" : ""}>
+							<div class={index > 0 ? "mt-36" : ""}>
 								<LeftLabel data={data} />
 							</div>
 						) : (
-							<div class={index > 0 ? "mt-48" : ""}>
+							<div class={index > 0 ? "mt-36" : ""}>
 								<RightLabel data={data} />
 							</div>
 						)
@@ -45,7 +45,7 @@ import LeftLabel from "./project_items/LeftLabel.astro"
 								class="duration date-label-left flex justify-center md:me-7 relative"
 							>
 								<img
-									src="src/assets/images/typing.svg"
+									src="/assets/images/typing.svg"
 									class="h-64 w-64 object-cover"
 									alt=""
 								/>
