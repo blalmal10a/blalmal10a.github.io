@@ -1,3 +1,9 @@
+---
+import {projectList} from "../assets/project-data.js"
+import RightLabel from "./project_items/RightLabel.astro"
+import LeftLabel from "./project_items/LeftLabel.astro"
+---
+
 <section
 	id="projects"
 	class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800"
@@ -19,7 +25,16 @@
 
 		<div class="grid grid-cols-1 mt-8">
 			<div class="timeline relative">
-				<div class="timeline-item">
+				{
+					projectList.map((data, index) => {
+						return !!(index % 2) ? (
+							<LeftLabel data={data} />
+						) : (
+							<RightLabel data={data} />
+						)
+					})
+				}
+				<!-- <div class="timeline-item">
 					<div class="grid sm:grid-cols-2">
 						<div class="">
 							<div
@@ -30,16 +45,11 @@
 									class="h-64 w-64 object-cover"
 									alt=""
 								/>
-								<!-- <img
-									src="assets/images/svg/design-thinking.svg"
-									class="h-64 w-64"
-									alt=""
-								/> -->
 							</div>
-						</div><!--end col-->
+						</div>
 						<div class="mt-4 md:mt-0">
 							<div
-								class="event event-description-right ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7"
+								class="event ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7"
 							>
 								<h5 class="text-lg dark:text-white mb-1 font-medium">
 									TILTETYPE
@@ -52,22 +62,22 @@
 									ka khawih hmasak ve ber a ni. Typing speed test-na game a nia,
 									a hnu-ah multiplayer mode dah belh a ni.
 									<br />
-									<a href="https://tiltetype.netlify.app">
+									<a href="https://tiltetype.netlify.app" target="_blank">
 										<u class="text-orange-500 font-semibold"
 											>Hetah hian khelh theihin a awm</u
 										>
 									</a>
 								</p>
 							</div>
-						</div><!--end col-->
+						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="timeline-item mt-5 pt-4">
+				<!-- <div class="timeline-item mt-5 pt-4">
 					<div class="grid sm:grid-cols-2">
 						<div class="md:order-1 order-2">
 							<div
-								class="event event-description-left ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7"
+								class="event ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7"
 							>
 								<h5 class="text-lg dark:text-white mb-1 font-medium">
 									Development
@@ -89,8 +99,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
-	</div><!--end container-->
+	</div>
 </section>
