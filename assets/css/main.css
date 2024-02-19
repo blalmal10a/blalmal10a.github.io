@@ -1,0 +1,15 @@
+.home-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+	background-image: url("/assets/images/top-down.webp");
+}
+
+.fade-in-element {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-element.visible {
+	opacity: 1;
+}

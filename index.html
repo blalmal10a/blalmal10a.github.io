@@ -2,13 +2,14 @@
 <html
 	lang="en"
 	class="light scroll-smooth"
+	style="width: 100vw !important;"
 >
 
 <head>
 	<meta charset="UTF-8">
 	<meta
 		name="description"
-		content="Portfolio - B. Lalmalsawma, M. Tech, Computer Enggneering."
+		content="@blalmal10a - Portfolio 🤫."
 	>
 	<meta
 		name="viewport"
@@ -53,11 +54,22 @@
 	>
 	<link
 		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	>
+	<link
+		rel="stylesheet"
 		href="/assets/css/star-rating.css"
 	>
 	<link
 		rel="stylesheet"
-		href="/assets/index.jL-WLTcU.css"
+		href="/assets/css/main.css"
+	>
+	<link
+		rel="stylesheet"
+		href="/assets/index.5_e4TGsx.css"
 	/>
 </head>
 
@@ -66,6 +78,7 @@
 	<nav
 		class="navbar"
 		id="navbar"
+		style="width: 100vw !important;"
 	>
 		<div class="container flex flex-wrap items-center justify-between">
 			<h3 class="text-orange-600 font-bold text-2xl"> <a href="/">HOME</a> </h3> <!-- Navbar Manu -->
@@ -120,43 +133,98 @@
 		class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800"
 		id="home"
 	> <!-- style="min-height: 100svh;" -->
-		<div class="absolute inset-0 bg-black opacity-80"></div>
+		<div
+			class="absolute inset-0 bg-black opacity-10 home-bg"
+			style="border-top: 70px solid  black;"
+		></div>
 		<div class="container mx-auto">
-			<div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 gap-10 items-center">
-				<div class="lg:col-span-5">
-					<div class="relativ flex justify-center"> <img
-							src="/assets/images/landing.svg"
-							class="rounded-lg relative max-w-[50vw] md:max-w-max"
-							alt=""
-						> <!-- style="max-width: min(50vh, 50vw);" -->
-						<!-- <img src="assets/images/about.jpg" class="rounded-lg shadow-lg relative" alt=""> --> <!-- <div class="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                <a href="#!" data-type="youtube" data-id="S_CGed6E610" class="lightbox h-20 w-20 rounded-full shadow-lg shadow-slate-100 dark:shadow-slate-800 inline-flex items-center justify-center bg-white dark:bg-slate-900 text-orange-600">
-                                    <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
-                                </a>
-                            </div> --> </div>
-				</div><!--end col-->
-				<div class="lg:col-span-7">
-					<div class="lg:ms-7">
-						<h6 class="text-orange-600 text-7xl mb-2">Hi!</h6>
-						<h3 class="md:text-2xl text-xl font-medium text-slate-300">
-							Ka hming chu
-						</h3>
-						<h3 class="mb-4 md:text-2xl font-medium text-slate-300 text-xl">
-							a pawimawh ber lo va.
-						</h3>
-						<!-- <h3 class="mb-4 md:text-2xl  font-medium text-slate-300 text-2xl">None of your business</h3> -->
-						<!-- <p class="text-slate-400 dark:text-slate-300 max-w-2xl mx-auto">Start working with Upwind that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy texts have been in use by typesetters since the 16th century.</p> -->
-						<p class="text-white max-w-2xl mx-auto text-2xl">
-							Thil lak tlak loh tak tak ka siam &#7789;hin
-							<!-- I build stupid applications -->
-						</p>
-						<div class="relative mt-10"> <a
-								href="#projects"
-								class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md"
-							>View Projects</a> </div>
+			<div class="">
+				<h6
+					class="text-orange-600 text-7xl mb-2"
+					data-aos="zoom-in-left"
+					data-aos-duration="2000"
+				>
+					Hi!
+				</h6>
+				<div
+					style="padding-left: min(10vh, 10vw);"
+					data-aos="fade-right"
+					data-aos-duration="2100"
+				>
+					<h3 class="md:text-2xl text-xl font-medium">Ka hming chu</h3>
+					<h3 class="mb-4 md:text-2xl font-medium text-xl">
+						a pawimawh ber lo va.
+					</h3>
+					<p class="max-w-2xl text-2xl">
+						Thil lak tlak loh tak tak ka siam &#7789;hin
+					</p>
+					<div class="flex -mx-2">
+						<div class="flex-shrink px-2">
+							<div
+								class="relative mt-10"
+								data-aos="zoom-in-up"
+								data-aos-duration="3000"
+							> <a
+									style="width: 200px;"
+									href="#projects"
+									class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md"
+								>Personal Projects</a> </div>
+						</div>
+						<div class="flex-shrink px-2">
+							<div
+								class="relative mt-10"
+								data-aos="zoom-in-up"
+								data-aos-duration="3000"
+							> <a
+									style="width: 200px;"
+									href="#technical-knowledge"
+									class="btn white-600 hover:white-700 border-orange-600 hover:border-orange-700 text-orange-600 rounded-md"
+								>Technical Skills</a> </div>
+						</div>
+					</div> <!-- <div
+					class="relative mt-10"
+					data-aos="zoom-in-up"
+					data-aos-duration="3000"
+				>
+					<a
+						href="#projects"
+						class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md"
+						>View Projects</a
+					>
+				</div> -->
+				</div>
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-2 gap-10 items-center bg-red-200"> <!-- <div class="lg:col-span-5">
+				<div class="relativ flex justify-center">
+					<img
+						src="/assets/images/landing.svg"
+						class="rounded-lg relative max-w-[50vw] md:max-w-max"
+						alt=""
+					/>
+				</div>
+			</div> --> <!--<div class="lg:col-span-7">
+				 <div class="lg:ms-7">
+					<h6 class="text-orange-600 text-7xl mb-2">Hi!</h6>
+					<h3 class="md:text-2xl text-xl font-medium text-slate-300">
+						Ka hming chu
+					</h3>
+					<h3 class="mb-4 md:text-2xl font-medium text-slate-300 text-xl">
+						a pawimawh ber lo va.
+					</h3>
+
+					<p class="text-white max-w-2xl mx-auto text-2xl">
+						Thil lak tlak loh tak tak ka siam &#7789;hin
+					</p>
+
+					<div class="relative mt-10">
+						<a
+							href="#projects"
+							class="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white rounded-md"
+							>View Projects</a
+						>
 					</div>
-				</div><!--end col-->
-			</div><!--end grid-->
+				</div>
+			</div> --> <!--end col--> </div><!--end grid-->
 		</div><!--end container-->
 	</section><!--end section--> <!-- End -->
 	<section
@@ -179,7 +247,7 @@
 			</p>
 			<div class="grid grid-cols-1 mt-8">
 				<div class="timeline relative">
-					<div class="">
+					<div class="fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
 								<div>
@@ -187,9 +255,16 @@
 											src="/assets/images/typing.svg"
 											class="h-64 w-64 object-cover"
 											alt=""
+											data-aos="fade-up-right"
+											data-aos-duration="300"
 										> </div>
 								</div>
-								<div class="mt-4 md:mt-0">
+								<div
+									class="mt-4 md:mt-0"
+									data-aos="fade-up-left"
+									data-aos-anchor-placement="bottom-bottom"
+									data-aos-duration="300"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium"> TYPING DUEL </h5>
@@ -206,10 +281,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
-								<div class="md:order-1 order-2">
+								<div
+									class="md:order-1 order-2"
+									data-aos="fade-up-right"
+									data-aos-duration="300"
+									data-aos-anchor-placement="bottom-bottom"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium">SHAZOO</h5>
@@ -227,6 +307,8 @@
 											src="/assets/images/banana.svg"
 											class="h-64 w-64"
 											alt=""
+											data-aos="fade-up-left"
+											data-aos-duration="300"
 										> <!-- <img src="assets/images/svg/coding.svg" class="h-64 w-64" alt="" /> --> <!-- <img
 					src="../../assets/images/keyboard-icon.svg"
 					class="h-64 w-64"
@@ -236,7 +318,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
 								<div>
@@ -244,9 +326,16 @@
 											src="/assets/images/awmzia.png"
 											class="h-64 w-64 object-cover"
 											alt=""
+											data-aos="fade-up-right"
+											data-aos-duration="300"
 										> </div>
 								</div>
-								<div class="mt-4 md:mt-0">
+								<div
+									class="mt-4 md:mt-0"
+									data-aos="fade-up-left"
+									data-aos-anchor-placement="bottom-bottom"
+									data-aos-duration="300"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium"> THIL AWMZIA - Mizo urban
@@ -263,10 +352,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
-								<div class="md:order-1 order-2">
+								<div
+									class="md:order-1 order-2"
+									data-aos="fade-up-right"
+									data-aos-duration="300"
+									data-aos-anchor-placement="bottom-bottom"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium">PDF API</h5>
@@ -284,6 +378,8 @@
 											src="/assets/images/document.svg"
 											class="h-64 w-64"
 											alt=""
+											data-aos="fade-up-left"
+											data-aos-duration="300"
 										> <!-- <img src="assets/images/svg/coding.svg" class="h-64 w-64" alt="" /> --> <!-- <img
 					src="../../assets/images/keyboard-icon.svg"
 					class="h-64 w-64"
@@ -293,7 +389,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
 								<div>
@@ -301,9 +397,16 @@
 											src="/assets/images/document-storage.png"
 											class="h-64 w-64 object-cover"
 											alt=""
+											data-aos="fade-up-right"
+											data-aos-duration="300"
 										> </div>
 								</div>
-								<div class="mt-4 md:mt-0">
+								<div
+									class="mt-4 md:mt-0"
+									data-aos="fade-up-left"
+									data-aos-anchor-placement="bottom-bottom"
+									data-aos-duration="300"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium"> DOCUMENT STORAGE </h5>
@@ -319,10 +422,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
-								<div class="md:order-1 order-2">
+								<div
+									class="md:order-1 order-2"
+									data-aos="fade-up-right"
+									data-aos-duration="300"
+									data-aos-anchor-placement="bottom-bottom"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium">PHARMACY MIS</h5>
@@ -339,6 +447,8 @@
 											src="/assets/images/pharmacy.svg"
 											class="h-64 w-64"
 											alt=""
+											data-aos="fade-up-left"
+											data-aos-duration="300"
 										> <!-- <img src="assets/images/svg/coding.svg" class="h-64 w-64" alt="" /> --> <!-- <img
 					src="../../assets/images/keyboard-icon.svg"
 					class="h-64 w-64"
@@ -348,7 +458,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
 								<div>
@@ -356,9 +466,16 @@
 											src="/assets/images/globe.svg"
 											class="h-64 w-64 object-cover"
 											alt=""
+											data-aos="fade-up-right"
+											data-aos-duration="300"
 										> </div>
 								</div>
-								<div class="mt-4 md:mt-0">
+								<div
+									class="mt-4 md:mt-0"
+									data-aos="fade-up-left"
+									data-aos-anchor-placement="bottom-bottom"
+									data-aos-duration="300"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium"> NEWS LEM LEM </h5>
@@ -374,10 +491,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
-								<div class="md:order-1 order-2">
+								<div
+									class="md:order-1 order-2"
+									data-aos="fade-up-right"
+									data-aos-duration="300"
+									data-aos-anchor-placement="bottom-bottom"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium">OVERTIMED</h5>
@@ -395,6 +517,8 @@
 											src="/assets/images/overtime.svg"
 											class="h-64 w-64"
 											alt=""
+											data-aos="fade-up-left"
+											data-aos-duration="300"
 										> <!-- <img src="assets/images/svg/coding.svg" class="h-64 w-64" alt="" /> --> <!-- <img
 					src="../../assets/images/keyboard-icon.svg"
 					class="h-64 w-64"
@@ -404,7 +528,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
 								<div>
@@ -412,9 +536,16 @@
 											src="/assets/images/code.svg"
 											class="h-64 w-64 object-cover"
 											alt=""
+											data-aos="fade-up-right"
+											data-aos-duration="300"
 										> </div>
 								</div>
-								<div class="mt-4 md:mt-0">
+								<div
+									class="mt-4 md:mt-0"
+									data-aos="fade-up-left"
+									data-aos-anchor-placement="bottom-bottom"
+									data-aos-duration="300"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-left rtl:text-right md:ms-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium"> LIGHTSAIL SCRIPT SIAMNA
@@ -433,10 +564,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="mt-36">
+					<div class="mt-36 fade-in-item">
 						<div class="timeline-item">
 							<div class="grid sm:grid-cols-2">
-								<div class="md:order-1 order-2">
+								<div
+									class="md:order-1 order-2"
+									data-aos="fade-up-right"
+									data-aos-duration="300"
+									data-aos-anchor-placement="bottom-bottom"
+								>
 									<div
 										class="event ltr:float-left rtl:float-right ltr:text-right rtl:text-left md:me-7">
 										<h5 class="text-lg dark:text-white mb-1 font-medium">AMAZON REVIEW TAM TAM
@@ -455,6 +591,8 @@
 											src="/assets/images/review.svg"
 											class="h-64 w-64"
 											alt=""
+											data-aos="fade-up-left"
+											data-aos-duration="300"
 										> <!-- <img src="assets/images/svg/coding.svg" class="h-64 w-64" alt="" /> --> <!-- <img
 					src="../../assets/images/keyboard-icon.svg"
 					class="h-64 w-64"
@@ -532,16 +670,13 @@
 		</div>
 	</section>
 	<section
-		id="projects"
+		id="technical-knowledge"
 		class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800"
 	>
 		<div class="container">
 			<div class="grid grid-cols-1 mb-4 text-center">
-				<h6 class="text-orange-600 text-base font-medium uppercase">Technical</h6> <!-- <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">
-				Ka thil tih reng reng hi, ni turin ka la bei nasa tawk lo pawh a ni mah
-				na le.
-			</p> -->
-			</div><!--end grid-->
+				<h6 class="text-orange-600 text-base font-medium uppercase">Technical</h6>
+			</div>
 			<h6 class="text-black dark:text-white text-center text-base font-medium uppercase mb-2">
 				KA HMANRUATE
 			</h6>
@@ -550,7 +685,7 @@
 				style="min-width: 100%; overflow-x: auto; min-height: max-content; overflow-y: hidden;"
 			>
 				<div class="w-full lg:col-span-1">
-					<table>
+					<table data-aos="flip-right">
 						<tbody>
 							<tr>
 								<td
@@ -1529,7 +1664,11 @@
 					</table>
 				</div>
 				<div class="w-full lg:col-span-1">
-					<table>
+					<table
+						data-aos="flip-left"
+						data-aos-offset="300"
+						data-aos-duration="500"
+					>
 						<tbody>
 							<tr>
 								<td
@@ -1901,11 +2040,11 @@
 					class="uil uil-sun text-[20px] text-yellow-500"
 				></i> <span
 					class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
-			</label> </span> </div> <!-- Start Footer -->
+			</label> </span> </div>
 	<footer
 		class="py-8 bg-slate-800 dark:bg-gray-900"
 		id="contact"
-	> <!-- Start -->
+	>
 		<section class="relative bg-slate-800 dark:bg-gray-900">
 			<div class="container mt-24">
 				<div class="grid grid-cols-1 pb-8 text-center">
@@ -1920,33 +2059,10 @@
 						thawk dun dawn em ni ang?
 					</p>
 				</div>
-			</div><!--end container-->
-		</section><!--end section--> <!-- End -->
+			</div>
+		</section>
 		<div class="flex justify-center">
-			<ul class="list-none foot-icon ltr:md:text-right rtl:md:text-left text-center"> <!-- <li class="inline">
-                <a
-                    href="https://1.envato.market/upwindt"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-shopping-cart align-middle" title="Buy Now"
-                    ></i></a
-                >
-            </li> --> <!-- <li class="inline">
-                <a
-                    href="https://dribbble.com/shreethemes"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-dribbble align-middle" title="dribbble"
-                    ></i></a
-                >
-            </li> --> <!-- <li class="inline">
-                <a
-                    href="https://www.behance.net/shreethemes"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-behance align-middle" title="Behance"></i></a
-                >
-            </li> -->
+			<ul class="list-none foot-icon ltr:md:text-right rtl:md:text-left text-center">
 				<li class="inline"> <a
 						href="https://www.github.com/blalmal10a/"
 						target="_blank"
@@ -1993,33 +2109,17 @@
 					><i
 							class="uil uil-linkedin align-middle"
 							title="Linkedin"
-						></i></a> </li> <!-- <li class="inline">
-                <a
-                    href="goole-form-url"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-file align-middle" title="customization"
-                    ></i></a
-                >
-            </li> -->
-			</ul><!--end icon-->
+						></i></a> </li>
+			</ul>
 		</div>
-		<div class="flex justify-center"> <img
+		<div
+			class="flex justify-center"
+			data-aos="zoom-in-down"
+		> <img
 				style="max-width: 300px;"
 				src="public/assets/images/high-five.svg"
 				alt=""
-			> </div> <!-- <div class="text-white px-5 pb-5">
-		<nav>
-			<ul>
-				<li style="display: inline; padding-right: 20px">
-					<u><a href="/privacy" target="_blank">Privacy</a></u>
-				</li>
-				<li style="display: inline; padding-right: 20px">
-					<u><a href="/terms" target="_blank">Terms</a></u>
-				</li>
-			</ul>
-		</nav>
-	</div> -->
+			> </div>
 		<div
 			class="p-2 md:p-5 flex justify-center"
 			style="height: 500px; overflow:hidden"
@@ -2033,7 +2133,7 @@
 				loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"
 			></iframe> </div>
-	</footer><!--end footer--> <!-- End Footer -->
+	</footer>
 	<div
 		style="height: 500vh; position: relative;"
 		class="bg-slate-800 dark:bg-gray-900"
@@ -2045,6 +2145,12 @@
 			TINGE HELAI THLENG THLENG I LO SCROLL A <br> I HARH LUTUK!
 		</div>
 	</div>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	></script>
 	<script src="/assets/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
 	<script src="/assets/libs/tobii/js/tobii.min.js"></script>
 	<script src="/assets/libs/tiny-slider/min/tiny-slider.js"></script>

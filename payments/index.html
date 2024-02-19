@@ -69,13 +69,14 @@
 <html
 	lang="en"
 	class="light scroll-smooth"
+	style="width: 100vw !important;"
 >
 
 <head>
 	<meta charset="UTF-8">
 	<meta
 		name="description"
-		content="Portfolio - B. Lalmalsawma, M. Tech, Computer Enggneering."
+		content="@blalmal10a - Portfolio 🤫."
 	>
 	<meta
 		name="viewport"
@@ -120,11 +121,22 @@
 	>
 	<link
 		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	>
+	<link
+		rel="stylesheet"
 		href="/assets/css/star-rating.css"
 	>
 	<link
 		rel="stylesheet"
-		href="/assets/index.jL-WLTcU.css"
+		href="/assets/css/main.css"
+	>
+	<link
+		rel="stylesheet"
+		href="/assets/index.5_e4TGsx.css"
 	/>
 </head>
 
@@ -133,6 +145,7 @@
 	<nav
 		class="navbar"
 		id="navbar"
+		style="width: 100vw !important;"
 	>
 		<div class="container flex flex-wrap items-center justify-between">
 			<h3 class="text-orange-600 font-bold text-2xl"> <a href="/">HOME</a> </h3> <!-- Navbar Manu -->
@@ -226,11 +239,11 @@
 				</div><!--astro:end-->
 			</astro-island>
 		</div>
-	</section> <!-- Start Footer -->
+	</section>
 	<footer
 		class="py-8 bg-slate-800 dark:bg-gray-900"
 		id="contact"
-	> <!-- Start -->
+	>
 		<section class="relative bg-slate-800 dark:bg-gray-900">
 			<div class="container mt-24">
 				<div class="grid grid-cols-1 pb-8 text-center">
@@ -245,33 +258,10 @@
 						thawk dun dawn em ni ang?
 					</p>
 				</div>
-			</div><!--end container-->
-		</section><!--end section--> <!-- End -->
+			</div>
+		</section>
 		<div class="flex justify-center">
-			<ul class="list-none foot-icon ltr:md:text-right rtl:md:text-left text-center"> <!-- <li class="inline">
-                <a
-                    href="https://1.envato.market/upwindt"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-shopping-cart align-middle" title="Buy Now"
-                    ></i></a
-                >
-            </li> --> <!-- <li class="inline">
-                <a
-                    href="https://dribbble.com/shreethemes"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-dribbble align-middle" title="dribbble"
-                    ></i></a
-                >
-            </li> --> <!-- <li class="inline">
-                <a
-                    href="https://www.behance.net/shreethemes"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-behance align-middle" title="Behance"></i></a
-                >
-            </li> -->
+			<ul class="list-none foot-icon ltr:md:text-right rtl:md:text-left text-center">
 				<li class="inline"> <a
 						href="https://www.github.com/blalmal10a/"
 						target="_blank"
@@ -318,33 +308,17 @@
 					><i
 							class="uil uil-linkedin align-middle"
 							title="Linkedin"
-						></i></a> </li> <!-- <li class="inline">
-                <a
-                    href="goole-form-url"
-                    target="_blank"
-                    class="btn btn-icon btn-sm border rounded-md border-slate-700 dark:border-slate-800 hover:border-orange-600 bg-slate-800 dark:bg-gray-900 hover:bg-orange-600 dark:hover:bg-orange-600 text-gray-400 hover:text-white"
-                    ><i class="uil uil-file align-middle" title="customization"
-                    ></i></a
-                >
-            </li> -->
-			</ul><!--end icon-->
+						></i></a> </li>
+			</ul>
 		</div>
-		<div class="flex justify-center"> <img
+		<div
+			class="flex justify-center"
+			data-aos="zoom-in-down"
+		> <img
 				style="max-width: 300px;"
 				src="public/assets/images/high-five.svg"
 				alt=""
-			> </div> <!-- <div class="text-white px-5 pb-5">
-		<nav>
-			<ul>
-				<li style="display: inline; padding-right: 20px">
-					<u><a href="/privacy" target="_blank">Privacy</a></u>
-				</li>
-				<li style="display: inline; padding-right: 20px">
-					<u><a href="/terms" target="_blank">Terms</a></u>
-				</li>
-			</ul>
-		</nav>
-	</div> -->
+			> </div>
 		<div
 			class="p-2 md:p-5 flex justify-center"
 			style="height: 500px; overflow:hidden"
@@ -358,7 +332,7 @@
 				loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"
 			></iframe> </div>
-	</footer><!--end footer--> <!-- End Footer -->
+	</footer>
 	<div
 		style="height: 500vh; position: relative;"
 		class="bg-slate-800 dark:bg-gray-900"
@@ -370,6 +344,12 @@
 			TINGE HELAI THLENG THLENG I LO SCROLL A <br> I HARH LUTUK!
 		</div>
 	</div>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	></script>
 	<script src="/assets/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
 	<script src="/assets/libs/tobii/js/tobii.min.js"></script>
 	<script src="/assets/libs/tiny-slider/min/tiny-slider.js"></script>
