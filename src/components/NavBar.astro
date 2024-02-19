@@ -1,0 +1,49 @@
+<!-- Navbar Start -->
+<nav class="navbar" id="navbar" style="width: 100vw !important;">
+	<div class="container flex flex-wrap items-center justify-between">
+		<h3 class="text-orange-600 font-bold text-2xl">
+			<a href="/">HOME</a>
+		</h3>
+
+		<!-- Navbar Manu -->
+
+		<div class="nav-icons items-center ms-auto">
+			<button
+				data-collapse="menu-collapse"
+				type="button"
+				class="collapse-btn inline-flex items-center ms-3 text-dark dark:text-white lg_992:hidden"
+				aria-controls="menu-collapse"
+				aria-expanded="false"
+			>
+				<span class="sr-only">Navigation Menu</span>
+				<i class="mdi mdi-menu mdi-24px"></i>
+			</button>
+		</div>
+		<div
+			class="navigation lg_992:order-1 lg_992:flex hidden"
+			id="menu-collapse"
+		>
+			<ul class="navbar-nav nav-light" id="navbar-navlist">
+				<li onclick="closeMenu();" class="nav-item">
+					<a class="nav-link active" href="/#home">Home</a>
+				</li>
+
+				<li onclick="closeMenu();" class="nav-item">
+					<a class="nav-link" href="/#projects">Portfolio</a>
+				</li>
+
+				<li onclick="closeMenu();" class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<script is:inline>
+	let menuCollapse = document.getElementById("menu-collapse")
+	function closeMenu() {
+		if (!menuCollapse) menuCollapse = document.getElementById("menu-collapse")
+		menuCollapse.classList.add("hidden")
+	}
+</script>
+<!-- Navbar End -->

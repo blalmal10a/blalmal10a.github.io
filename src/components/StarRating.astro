@@ -1,0 +1,54 @@
+---
+interface Props {
+	rate: number
+	label: string
+}
+const {rate, label} = Astro.props
+let items = ""
+for (let i = 0; i < 10; i++) {
+	// items += `<div>Your Element ${i + 1}</div>`
+	const eleId = i + 1
+
+	items += `<input  type="radio" id="${
+		i + 1
+	}-${label}" name="rating-${label}" value="${i + 1}" ${
+		eleId == 10 - rate + 1 ? "checked" : ""
+	} disabled />
+	<label for="${i + 1}-${label}" class="star">&#9733;</label>`
+}
+---
+
+<div class="star-rating">
+	<Fragment set:html={items} />
+	<!-- <input disabled type="radio" id="10-stars" name="rating" value="10" />
+	<label for="10-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="9-stars" name="rating" value="9" />
+	<label for="9-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="8-stars" name="rating" value="8" />
+	<label for="8-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="7-stars" name="rating" value="7" />
+	<label for="7-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="6-stars" name="rating" value="6" />
+	<label for="6-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="5-stars" name="rating" value="5" />
+	<label for="5-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="4-stars" name="rating" value="4" />
+	<label for="4-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="3-stars" name="rating" value="3" />
+	<label for="3-stars" class="star">&#9733;</label>
+	<input disabled type="radio" id="2-stars" name="rating" value="2" />
+	<label for="2-stars" class="star">&#9733;</label> -->
+</div>
+
+<!-- <div class="star-rating">
+	<input type="radio" id="5-stars" name="rating" value="5" />
+	<label for="5-stars" class="star">&#9733;</label>
+	<input type="radio" id="4-stars" name="rating" value="4" />
+	<label for="4-stars" class="star">&#9733;</label>
+	<input type="radio" id="3-stars" name="rating" value="3" />
+	<label for="3-stars" class="star">&#9733;</label>
+	<input type="radio" id="2-stars" name="rating" value="2" />
+	<label for="2-stars" class="star">&#9733;</label>
+	<input type="radio" id="1-star" name="rating" value="1" />
+	<label for="1-star" class="star">&#9733;</label>
+</div> -->

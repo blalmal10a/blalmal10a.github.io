@@ -1,0 +1,80 @@
+---
+import {otherSkillList, skillList} from "../scripts/skill-data"
+import StarRating from "./StarRating.astro"
+---
+
+<section
+	id="technical-knowledge"
+	class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800"
+>
+	<div class="container" style="overflow-x: hidden">
+		<div class="grid grid-cols-1 mb-4 text-center">
+			<h6 class="text-orange-600 text-base font-medium uppercase">Technical</h6>
+		</div>
+
+		<h6
+			class="text-black dark:text-white text-center text-base font-medium uppercase mb-2"
+		>
+			KA HMANRUATE
+		</h6>
+		<div
+			class="flex flex-wrap lg:flex-nowrap lg:space-x-5"
+			style="min-width: 100%; overflow-x: auto; min-height: max-content; overflow-y: hidden;"
+		>
+			<div class="w-full lg:col-span-1" style=";">
+				<table data-aos="flip-right">
+					<tbody>
+						{
+							skillList.map((skill) => (
+								<tr>
+									<td
+										style="padding-top: 20px; width: 195px"
+										class="text-orange-500"
+									>
+										{skill.label}
+									</td>
+									<td style="padding-top: 20px; padding-left: 20px">
+										<StarRating label={skill.label} rate={skill.level} />
+									</td>
+								</tr>
+							))
+						}
+					</tbody>
+				</table>
+			</div>
+
+			<div class="w-full lg:col-span-1" style=";">
+				<table
+					data-aos="flip-left"
+					data-aos-offset="300"
+					data-aos-duration="500"
+				>
+					<tbody>
+						{
+							otherSkillList.map((skill) => (
+								<tr>
+									<td
+										style="padding-top: 20px;  width: 195px"
+										class="text-orange-500"
+									>
+										{skill.label}
+									</td>
+									<td style="padding-top: 20px ; padding-left: 20px">
+										{skill.level == 0 ? (
+											<div class="" style="">
+												Hello World
+											</div>
+										) : (
+											<StarRating label={skill.label} rate={skill.level} />
+										)}
+									</td>
+								</tr>
+							))
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- end skills -->
+	</div>
+</section>

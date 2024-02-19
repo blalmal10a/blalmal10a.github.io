@@ -1,7 +1,7 @@
 .github
 
 # build output
-dist/
+# dist/
 
 # generated types
 .astro/
@@ -23,7 +23,7 @@ pnpm-debug.log*
 .DS_Store
 ignore
 
-src
+
 
 
 astro.config.mjs
