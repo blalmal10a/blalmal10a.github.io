@@ -1,5 +1,10 @@
 import type { APIRoute } from "astro";
 
 export const GET: APIRoute = () => {
-  return new Response("did:plc:2t7neqm6tpf6hck6pu3dnuad");
+  return new Response('did:plc:2t7neqm6tpf6hck6pu3dnuad', {
+    status: 200,
+    headers: {
+      'content-type': 'text'
+    }
+  })
 };
