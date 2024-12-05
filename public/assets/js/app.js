@@ -1,3 +1,4 @@
+
 /* Template Name: Upwind - Tailwind CSS Landing Page Template
    Author: Shreethemes
    Email: support@shreethemes.in
@@ -40,6 +41,8 @@ function fn() {
 	AOS.init({
 		duration: 1200
 	});
+
+	
 }
 /*********************/
 /*     Menus         */
@@ -181,3 +184,4 @@ try {
 	const switcherRtl = document.getElementById("switchRtl")
 	switcherRtl?.addEventListener("click", changeLayout)
 } catch (err) { }
+

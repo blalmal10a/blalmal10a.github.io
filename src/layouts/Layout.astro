@@ -26,7 +26,10 @@ const {title} = Astro.props
 		<link rel="preload" href="/assets/preload.css" as="style" />
 		<link rel="stylesheet" href="/assets/preload.css" />
 		<link href="/assets/libs/tobii/css/tobii.min.css" rel="stylesheet" />
-		<link href="/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet" />
+		<link
+			href="/assets/libs/tiny-slider/tiny-slider.css"
+			rel="stylesheet"
+		/>
 		<!-- Main Css -->
 		<link
 			href="/assets/libs/@iconscout/unicons/css/line.css"
@@ -59,7 +62,7 @@ const {title} = Astro.props
 		<slot />
 
 		<FooterSection />
-		<div
+		<!-- <div
 			style="height: 500vh; position: relative;"
 			class="bg-slate-800 dark:bg-gray-900"
 		>
@@ -69,7 +72,7 @@ const {title} = Astro.props
 			>
 				TINGE HELAI THLENG THLENG I LO SCROLL A <br /> I HARH LUTUK!
 			</div>
-		</div>
+		</div> -->
 
 		<script
 			is:inline
@@ -84,6 +87,8 @@ const {title} = Astro.props
 		></script>
 		<script is:inline src="/assets/js/plugins.init.js"></script>
 		<script is:inline src="/assets/js/app.js"></script>
+		<script type="module" is:inline src="/assets/js/neon-cursor.js"
+		></script>
 	</body>
 </html>
 <style is:global>

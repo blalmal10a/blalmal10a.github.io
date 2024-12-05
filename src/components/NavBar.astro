@@ -28,9 +28,9 @@
 					<a class="nav-link active" href="/#home">Home</a>
 				</li>
 
-				<li onclick="closeMenu();" class="nav-item">
+				<!-- <li onclick="closeMenu();" class="nav-item">
 					<a class="nav-link" href="/#projects">Portfolio</a>
-				</li>
+				</li> -->
 
 				<li onclick="closeMenu();" class="nav-item">
 					<a class="nav-link" href="#contact">Contact</a>
@@ -42,7 +42,8 @@
 <script is:inline>
 	let menuCollapse = document.getElementById("menu-collapse")
 	function closeMenu() {
-		if (!menuCollapse) menuCollapse = document.getElementById("menu-collapse")
+		if (!menuCollapse)
+			menuCollapse = document.getElementById("menu-collapse")
 		menuCollapse.classList.add("hidden")
 	}
 </script>
