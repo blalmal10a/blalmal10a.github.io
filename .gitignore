@@ -6,3 +6,5 @@
 
 # VSCode project config
 *.vscode
+
+.backup

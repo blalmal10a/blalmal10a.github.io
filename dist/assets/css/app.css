@@ -1,0 +1,56 @@
+html {
+	margin: 0;
+	background-color: #000;
+}
+body {
+	margin: 0;
+}
+.dock-container {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 4rem;
+}
+.dock {
+	background: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	border-radius: 16px;
+	display: flex;
+	gap: 15px;
+	backdrop-filter: blur(5px);
+	margin: auto;
+	max-width: max-content;
+	background-color: #dfdfdf;
+}
+
+.dock-icon {
+	width: 60px;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.dock-icon i {
+	font-size: 28px;
+	color: #2c3e50;
+	transition: all 0.3s ease;
+}
+
+.dock-icon:hover {
+	transform: translateY(-10px) scale(1.25);
+	background: white;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dock-icon:hover i {
+	transform: scale(1.2);
+}
+
+a {
+	text-decoration: none;
+}
