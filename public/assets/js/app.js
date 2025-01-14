@@ -1,4 +1,3 @@
-
 /* Template Name: Upwind - Tailwind CSS Landing Page Template
    Author: Shreethemes
    Email: support@shreethemes.in
@@ -39,10 +38,8 @@ function fn() {
 	}
 
 	AOS.init({
-		duration: 1200
-	});
-
-	
+		duration: 1200,
+	})
 }
 /*********************/
 /*     Menus         */
@@ -75,7 +72,7 @@ try {
 		// contentClass: 'active', // applied to the content
 		offset: 80,
 	})
-} catch (error) { }
+} catch (error) {}
 
 // Smooth scroll
 try {
@@ -83,7 +80,7 @@ try {
 		speed: 800,
 		offset: 80,
 	})
-} catch (error) { }
+} catch (error) {}
 
 // Menu Collapse
 const toggleCollapse = (elementId, show = true) => {
@@ -165,7 +162,7 @@ try {
 	const chk = document.getElementById("chk")
 
 	chk.addEventListener("change", changeTheme)
-} catch (err) { }
+} catch (err) {}
 
 /*********************/
 /* LTR & RTL Mode */
@@ -183,5 +180,4 @@ try {
 	}
 	const switcherRtl = document.getElementById("switchRtl")
 	switcherRtl?.addEventListener("click", changeLayout)
-} catch (err) { }
-
+} catch (err) {}
