@@ -107,5 +107,19 @@
         </div>
     </div>
 </body>
+<script>
+    const element = document.getElementById('particle-image')
+    element.addEventListener('touchend', () => {
+        setTimeout(() => {
+            let pImg = window.pImgDom[0].pImageConfig;
+            pImg.mouse.x = null;
+            pImg.mouse.y = null;
+            pImg.particles.array.forEach(p => {
+                p.vx = 0;
+                p.vy = 0;
+            });
+        }, 500);
+    });
+</script>
 
 </html>
